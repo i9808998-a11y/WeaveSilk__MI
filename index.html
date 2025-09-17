@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interactive WeaveSilk Clone</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="canvas"></canvas>
+
+<div class="logo">WeaveSilk (MI)</div>
+<div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+
+<div class="menu" id="menu">
+  <h3>🎨 Controls</h3>
+  <label>Color <input type="color" id="color" value="#00ffff"></label>
+  <label>Brush <input type="range" id="brush" min="1" max="50" value="8"></label>
+  <label>Glow <input type="range" id="glow" min="0" max="50" value="15"></label>
+  <label>Symmetry <input type="number" id="symmetry" min="2" max="24" value="6"></label>
+  <label><span>Mirror</span><input type="checkbox" id="mirror" checked></label>
+  <label><span>Rainbow</span><input type="checkbox" id="rainbow"></label>
+  <label><span>Smooth</span><input type="checkbox" id="smooth" checked></label>
+  <label>Background 
+    <select id="bg">
+      <option value="black">Black</option>
+      <option value="white">White</option>
+      <option value="gradient">Gradient</option>
+    </select>
+  </label>
+  <button id="undo">Undo</button>
+  <button id="clear">Clear</button>
+  <button id="random">🎲 Randomize</button>
+  <button id="save">Save</button>
+  <button id="fullscreen">Fullscreen</button>
+</div>
+
+<div class="footer" id="footer">Made with ❤️ by MI</div>
+
+<script src="script.js"></script>
+</body>
+</html>
